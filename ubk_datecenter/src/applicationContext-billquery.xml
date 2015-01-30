@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	   					   http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="jdBillService"
+		class="com.unbank.spider.billquery.service.impl.JdBillServiceImpl"
+		autowire="byName">
+	</bean>
+	<bean id="jdBillDao" class="com.unbank.spider.billquery.dao.impl.JdBillDaoImpl"
+		autowire="byName">
+
+	</bean>
+	<bean id="yinpiaoBillService"
+		class="com.unbank.spider.billquery.service.impl.YinpiaoBillServiceImpl"
+		autowire="byName">
+	</bean>
+	<bean id="yinpiaoBillDao" class="com.unbank.spider.billquery.dao.impl.YinpiaoBillDaoImpl"
+		autowire="byName">
+	</bean>
+	<bean id="weicaifuBillService"
+		class="com.unbank.spider.billquery.service.impl.WeicaifuBillServiceImpl"
+		autowire="byName">
+	</bean>
+	<bean id="weicaifuBillDao"
+		class="com.unbank.spider.billquery.dao.impl.WeicaifuBillDaoImpl"
+		autowire="byName">
+	</bean>
+	<bean id="jingyinmaoBillService"
+		class="com.unbank.spider.billquery.service.impl.JingyinmaoBillServiceImpl"
+		autowire="byName">
+	</bean>
+	<bean id="jingyinmaoBillDao"
+		class="com.unbank.spider.billquery.dao.impl.JingyinmaoBillDaoImpl"
+		autowire="byName">
+	</bean>
+	<bean id="piaojubaoBillService"
+		class="com.unbank.spider.billquery.service.impl.PiaojubaoBillServiceImpl"
+		autowire="byName">
+	</bean>
+	<bean id="piaojubaoBillDao"
+		class="com.unbank.spider.billquery.dao.impl.PiaojubaoBillDaoImpl"
+		autowire="byName">
+	</bean>
+
+	<bean id="chinaBillService"
+		class="com.unbank.spider.billquery.service.impl.ChinaBillServiceImpl"
+		autowire="byName">
+	</bean>
+	<bean id="chinaBillDao" class="com.unbank.spider.billquery.dao.impl.ChinaBillDaoImpl"
+		autowire="byName">
+	</bean>
+
+	<bean id="zgpjPiaojuBillService"
+		class="com.unbank.spider.billquery.service.impl.ZgpjPiaojuBillServiceImpl"
+		autowire="byName">
+	</bean>
+	<bean id="zgpjPiaojuBillDao"
+		class="com.unbank.spider.billquery.dao.impl.ZgpjPiaojuBillDaoImpl"
+		autowire="byName">
+	</bean>
+
+
+	<bean id="pjtxBillService"
+		class="com.unbank.spider.billquery.service.impl.PjtxBillServiceImpl"
+		autowire="byName">
+	</bean>
+	<bean id="pjtxBillDao" class="com.unbank.spider.billquery.dao.impl.PjtxBillDaoImpl"
+		autowire="byName">
+	</bean>
+
+
+	<bean id="zgpjZhitieBillService"
+		class="com.unbank.spider.billquery.service.impl.ZgpjZhitieBillServiceImpl"
+		autowire="byName">
+	</bean>
+	<bean id="zgpjZhitieBillDao"
+		class="com.unbank.spider.billquery.dao.impl.ZgpjZhitieBillDaoImpl"
+		autowire="byName">
+	</bean>
+
+
+	<bean id="zgpjZhuantieBillService"
+		class="com.unbank.spider.billquery.service.impl.ZgpjZhuantieBillServiceImpl"
+		autowire="byName">
+	</bean>
+	<bean id="zgpjZhuantieBillDao"
+		class="com.unbank.spider.billquery.dao.impl.ZgpjZhuantieBillDaoImpl"
+		autowire="byName">
+	</bean>
+
+	<bean id="htBillService"
+		class="com.unbank.spider.billquery.service.impl.HtBillServiceImpl"
+		autowire="byName">
+	</bean>
+	<bean id="htBillDao" class="com.unbank.spider.billquery.dao.impl.HtBillDaoImpl"
+		autowire="byName">
+	</bean>
+
+	<bean id="jr138BillService"
+		class="com.unbank.spider.billquery.service.impl.Jr138BillServiceImpl"
+		autowire="byName">
+	</bean>
+	<bean id="jr138BillDao" class="com.unbank.spider.billquery.dao.impl.Jr138BillDaoImpl"
+		autowire="byName">
+	</bean>
+
+
+	<bean id="piaojuyiBillService"
+		class="com.unbank.spider.billquery.service.impl.PiaojuyiBillServiceImpl"
+		autowire="byName">
+	</bean>
+	<bean id="piaojuyiBillDao"
+		class="com.unbank.spider.billquery.dao.impl.PiaojuyiBillDaoImpl"
+		autowire="byName">
+	</bean>
+
+</beans>

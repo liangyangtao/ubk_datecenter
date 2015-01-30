@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration  
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"  
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<mappers>
+		<mapper resource="com/unbank/spider/mybatis/mapper/JdbillMapper.xml" />
+		<mapper resource="com/unbank/spider/mybatis/mapper/ArticleInfoMapper.xml" />
+		<mapper resource="com/unbank/spider/mybatis/mapper/ArticleContentMapper.xml" />
+		<mapper resource="com/unbank/spider/mybatis/mapper/ArticleKeywordMapper.xml" />
+		<mapper resource="com/unbank/spider/mybatis/mapper/CourtInfoMapper.xml" />
+		<mapper
+			resource="com/unbank/spider/mybatis/mapper/YangleeSilverLetterMapper.xml" />
+		<mapper resource="com/unbank/spider/mybatis/mapper/BhiInfoMapper.xml" />
+		<mapper resource="com/unbank/spider/mybatis/mapper/YinpiaoBillMapper.xml" />
+		<mapper resource="com/unbank/spider/mybatis/mapper/WeicaifuBillMapper.xml" />
+		<mapper resource="com/unbank/spider/mybatis/mapper/JingyinmaoBillMapper.xml" />
+		<mapper resource="com/unbank/spider/mybatis/mapper/PiaojubaoBillMapper.xml" />
+		<mapper
+			resource="com/unbank/spider/mybatis/mapper/ChinaventureMergereventMapper.xml" />
+		<mapper
+			resource="com/unbank/spider/mybatis/mapper/ChinaventureFinancingMapper.xml" />
+		<mapper resource="com/unbank/spider/mybatis/mapper/ChinabillMapper.xml" />
+		<mapper resource="com/unbank/spider/mybatis/mapper/ZgpjPiaojuBillMapper.xml" />
+		<mapper resource="com/unbank/spider/mybatis/mapper/PjtxBillMapper.xml" />
+		<mapper resource="com/unbank/spider/mybatis/mapper/ZgpjZhitieBillMapper.xml" />
+		<mapper resource="com/unbank/spider/mybatis/mapper/ZgpjZhuantieBillMapper.xml" />
+		<mapper resource="com/unbank/spider/mybatis/mapper/HtBillMapper.xml" />
+		<mapper resource="com/unbank/spider/mybatis/mapper/Jr138BillMapper.xml" />
+		<mapper resource="com/unbank/spider/mybatis/mapper/PiaojuyiBillMapper.xml" />
+	</mappers>
+</configuration>  

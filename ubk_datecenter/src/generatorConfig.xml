@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+	<classPathEntry
+		location="D:/webWorkspace/ubk_datecenter/WebRoot/WEB-INF/lib/mysql-connector-java-5.1.26-bin.jar" />
+	<context id="mysql_context" targetRuntime="MyBatis3">
+
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://10.0.0.51:3306/ubk_datacenter?autoReconnect=true&amp;characterEncoding=UTF-8"
+			userId="spider" password="spider" />
+		<javaModelGenerator targetPackage="com.unbank.spider.mybatis.vo"
+			targetProject="ubk_datecenter/src" />
+		<sqlMapGenerator targetPackage="com.unbank.spider.mybatis.mapper"
+			targetProject="ubk_datecenter/src" />
+		<javaClientGenerator targetPackage="com.unbank.spider.mybatis.client"
+			targetProject="ubk_datecenter/src" type="XMLMAPPER" />
+
+		<!-- <table tableName="ptf_crawl" domainObjectName="ArticleInfo"> <generatedKey 
+			column="crawl_id" sqlStatement="SELECT LAST_INSERT_ID()" identity="true" 
+			type="post" /> <columnOverride column="file_index" jdbcType="TINYINT" javaType="Byte"> 
+			</columnOverride> </table> <table tableName="ptf_crawl_text" domainObjectName="ArticleContent"> 
+			<generatedKey column="crawl_id" sqlStatement="SELECT LAST_INSERT_ID()" identity="true" 
+			type="post" /> </table> <table tableName="ptf_crawl_keyword" domainObjectName="ArticleKeyword"> 
+			<generatedKey column="crawl_id" sqlStatement="SELECT LAST_INSERT_ID()" identity="true" 
+			type="post" /> </table> -->
+		<table tableName="piaojuyi_bill" domainObjectName="PiaojuyiBill">
+			<generatedKey column="id" sqlStatement="SELECT LAST_INSERT_ID()"
+				identity="true" type="post" />
+		</table>
+
+
+	</context>
+
+</generatorConfiguration>

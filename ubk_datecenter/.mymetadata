@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="ubk_datecenter"
+  id="myeclipse.1419475907796"
+  context-root="/ubk_datecenter"
+  j2ee-spec="5.0"
+  archive="ubk_datecenter.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

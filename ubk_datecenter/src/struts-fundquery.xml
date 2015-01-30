@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.devMode" value="true" />
+	<package name="fundquery" namespace="/" extends="default">
+
+		<action name="readYangleeSilverLetterInfos"
+			class="com.unbank.spider.fundquery.action.YangleeSilverLetterAction"
+			method="readYangleeSilverLetterInfos">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="exportYangleeSilverLetterExcel" method="exportYangleeSilverLetterExcel"
+			class="com.unbank.spider.fundquery.action.YangleeSilverLetterAction">
+			<result name="success" type="stream">
+				<param name="contentType">application/vnd.ms-excel;charset=utf-8</param>
+				<param name="inputName">inputStream</param>
+				<param name="bufferSize">4096</param>
+				<param name="contentDisposition">attachment;fileName="${fileName}"</param>
+			</result>
+		</action>
+
+
+
+		<action name="readChinaventureMergereventInfos"
+			class="com.unbank.spider.fundquery.action.ChinaventureMergereventAction"
+			method="readChinaventureMergereventInfos">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="exportChinaventureMergereventExcel" method="exportChinaventureMergereventExcel"
+			class="com.unbank.spider.fundquery.action.ChinaventureMergereventAction">
+			<result name="success" type="stream">
+				<param name="contentType">application/vnd.ms-excel;charset=utf-8</param>
+				<param name="inputName">inputStream</param>
+				<param name="bufferSize">4096</param>
+				<param name="contentDisposition">attachment;fileName="${fileName}"</param>
+			</result>
+		</action>
+
+
+		<action name="readChinaventureFinancingInfos"
+			class="com.unbank.spider.fundquery.action.ChinaventureFinancingAction"
+			method="readChinaventureFinancingInfos">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="exportChinaventureFinancingExcel" method="exportChinaventureFinancingExcel"
+			class="com.unbank.spider.fundquery.action.ChinaventureFinancingAction">
+			<result name="success" type="stream">
+				<param name="contentType">application/vnd.ms-excel;charset=utf-8</param>
+				<param name="inputName">inputStream</param>
+				<param name="bufferSize">4096</param>
+				<param name="contentDisposition">attachment;fileName="${fileName}"</param>
+			</result>
+		</action>
+
+	</package>
+</struts>    

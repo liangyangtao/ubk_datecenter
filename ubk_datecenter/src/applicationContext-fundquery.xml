@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	   					   http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="yangleeSilverLetterService"
+		class="com.unbank.spider.fundquery.service.impl.YangleeSilverLetterServiceImpl"
+		autowire="byName">
+	</bean>
+	<bean id="yangleeSilverLetterDao"
+		class="com.unbank.spider.fundquery.dao.impl.YangleeSilverLetterDaoImpl"
+		autowire="byName">
+
+	</bean>
+
+
+	<bean id="chinaventureMergereventService"
+		class="com.unbank.spider.fundquery.service.impl.ChinaventureMergereventServiceImpl"
+		autowire="byName">
+	</bean>
+	<bean id="chinaventureMergereventDao"
+		class="com.unbank.spider.fundquery.dao.impl.ChinaventureMergereventDaoImpl"
+		autowire="byName">
+
+	</bean>
+
+
+	<bean id="chinaventureFinancingService"
+		class="com.unbank.spider.fundquery.service.impl.ChinaventureFinancingServiceImpl"
+		autowire="byName">
+	</bean>
+	<bean id="chinaventureFinancingDao"
+		class="com.unbank.spider.fundquery.dao.impl.ChinaventureFinancingDaoImpl"
+		autowire="byName">
+	</bean>
+
+</beans>

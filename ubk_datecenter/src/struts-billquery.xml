@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.devMode" value="true" />
+	<package name="billquery" namespace="/" extends="default">
+
+		<action name="readJDBills" class="com.unbank.spider.billquery.action.JdBillAction"
+			method="readJDBills">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="exportexcel" method="exportexcel"
+			class="com.unbank.spider.billquery.action.JdBillAction">
+			<result name="success" type="stream">
+				<param name="contentType">application/vnd.ms-excel;charset=utf-8</param>
+				<param name="inputName">inputStream</param>
+				<param name="bufferSize">4096</param>
+				<param name="contentDisposition">attachment;fileName="${fileName}"</param>
+			</result>
+		</action>
+
+		<action name="readYinpiaoBills"
+			class="com.unbank.spider.billquery.action.YinpiaoBillAction" method="readYinpiaoBills">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="exportYinpaoExcel" method="exportYinpaoExcel"
+			class="com.unbank.spider.billquery.action.YinpiaoBillAction">
+			<result name="success" type="stream">
+				<param name="contentType">application/vnd.ms-excel;charset=utf-8</param>
+				<param name="inputName">inputStream</param>
+				<param name="bufferSize">4096</param>
+				<param name="contentDisposition">attachment;fileName="${fileName}"</param>
+			</result>
+		</action>
+		<action name="readWeicaifuBills"
+			class="com.unbank.spider.billquery.action.WeicaifuBillAction" method="readWeicaifuBills">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="exportWeicaifuExcel" method="exportWeicaifuExcel"
+			class="com.unbank.spider.billquery.action.WeicaifuBillAction">
+			<result name="success" type="stream">
+				<param name="contentType">application/vnd.ms-excel;charset=utf-8</param>
+				<param name="inputName">inputStream</param>
+				<param name="bufferSize">4096</param>
+				<param name="contentDisposition">attachment;fileName="${fileName}"</param>
+			</result>
+		</action>
+		<action name="readJingyinmaoBills"
+			class="com.unbank.spider.billquery.action.JingyinmaoBillAction"
+			method="readJingyinmaoBills">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="exportJingyinmaoExcel" method="exportJingyinmaoExcel"
+			class="com.unbank.spider.billquery.action.JingyinmaoBillAction">
+			<result name="success" type="stream">
+				<param name="contentType">application/vnd.ms-excel;charset=utf-8</param>
+				<param name="inputName">inputStream</param>
+				<param name="bufferSize">4096</param>
+				<param name="contentDisposition">attachment;fileName="${fileName}"</param>
+			</result>
+		</action>
+		<action name="readPiaojubaoBills"
+			class="com.unbank.spider.billquery.action.PiaojubaoBillAction"
+			method="readPiaojubaoBills">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="exportPiaojubaoExcel" method="exportPiaojubaoExcel"
+			class="com.unbank.spider.billquery.action.PiaojubaoBillAction">
+			<result name="success" type="stream">
+				<param name="contentType">application/vnd.ms-excel;charset=utf-8</param>
+				<param name="inputName">inputStream</param>
+				<param name="bufferSize">4096</param>
+				<param name="contentDisposition">attachment;fileName="${fileName}"</param>
+			</result>
+		</action>
+
+		<action name="readChinaBills"
+			class="com.unbank.spider.billquery.action.ChinaBillAction" method="readChinaBills">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="exportChinabillExcel" method="exportChinabillExcel"
+			class="com.unbank.spider.billquery.action.ChinaBillAction">
+			<result name="success" type="stream">
+				<param name="contentType">application/vnd.ms-excel;charset=utf-8</param>
+				<param name="inputName">inputStream</param>
+				<param name="bufferSize">4096</param>
+				<param name="contentDisposition">attachment;fileName="${fileName}"</param>
+			</result>
+		</action>
+
+		<action name="readZgpjPiaojuBills"
+			class="com.unbank.spider.billquery.action.ZgpjPiaojuBillAction"
+			method="readZgpjPiaojuBills">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="exportZgpjPiaojuBillExcel" method="exportZgpjPiaojuBillExcel"
+			class="com.unbank.spider.billquery.action.ZgpjPiaojuBillAction">
+			<result name="success" type="stream">
+				<param name="contentType">application/vnd.ms-excel;charset=utf-8</param>
+				<param name="inputName">inputStream</param>
+				<param name="bufferSize">4096</param>
+				<param name="contentDisposition">attachment;fileName="${fileName}"</param>
+			</result>
+		</action>
+
+
+
+		<action name="readPjtxBills"
+			class="com.unbank.spider.billquery.action.PjtxBillAction" method="readPjtxBills">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="exportPjtxBillExcel" method="exportPjtxBillExcel"
+			class="com.unbank.spider.billquery.action.PjtxBillAction">
+			<result name="success" type="stream">
+				<param name="contentType">application/vnd.ms-excel;charset=utf-8</param>
+				<param name="inputName">inputStream</param>
+				<param name="bufferSize">4096</param>
+				<param name="contentDisposition">attachment;fileName="${fileName}"</param>
+			</result>
+		</action>
+
+		<action name="readZgpjZhitieBills"
+			class="com.unbank.spider.billquery.action.ZgpjZhitieBillAction"
+			method="readZgpjZhitieBills">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="exportZgpjZhitieBillExcel" method="exportZgpjZhitieBillExcel"
+			class="com.unbank.spider.billquery.action.ZgpjZhitieBillAction">
+			<result name="success" type="stream">
+				<param name="contentType">application/vnd.ms-excel;charset=utf-8</param>
+				<param name="inputName">inputStream</param>
+				<param name="bufferSize">4096</param>
+				<param name="contentDisposition">attachment;fileName="${fileName}"</param>
+			</result>
+		</action>
+
+
+		<action name="readZgpjZhuantieBills"
+			class="com.unbank.spider.billquery.action.ZgpjZhuantieBillAction"
+			method="readZgpjZhuantieBills">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="exportZgpjZhuantieBillExcel" method="exportZgpjZhuantieBillExcel"
+			class="com.unbank.spider.billquery.action.ZgpjZhuantieBillAction">
+			<result name="success" type="stream">
+				<param name="contentType">application/vnd.ms-excel;charset=utf-8</param>
+				<param name="inputName">inputStream</param>
+				<param name="bufferSize">4096</param>
+				<param name="contentDisposition">attachment;fileName="${fileName}"</param>
+			</result>
+		</action>
+
+
+
+		<action name="readHtBills" class="com.unbank.spider.billquery.action.HtBillAction"
+			method="readHtBills">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="exportHtBillExcel" method="exportHtBillExcel"
+			class="com.unbank.spider.billquery.action.HtBillAction">
+			<result name="success" type="stream">
+				<param name="contentType">application/vnd.ms-excel;charset=utf-8</param>
+				<param name="inputName">inputStream</param>
+				<param name="bufferSize">4096</param>
+				<param name="contentDisposition">attachment;fileName="${fileName}"</param>
+			</result>
+		</action>
+
+
+		<action name="readJr138Bills"
+			class="com.unbank.spider.billquery.action.Jr138BillAction" method="readJr138Bills">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="exportJr138BillExcel" method="exportJr138BillExcel"
+			class="com.unbank.spider.billquery.action.Jr138BillAction">
+			<result name="success" type="stream">
+				<param name="contentType">application/vnd.ms-excel;charset=utf-8</param>
+				<param name="inputName">inputStream</param>
+				<param name="bufferSize">4096</param>
+				<param name="contentDisposition">attachment;fileName="${fileName}"</param>
+			</result>
+		</action>
+
+		<action name="readPiaojuyiBills"
+			class="com.unbank.spider.billquery.action.PiaojuyiBillAction" method="readPiaojuyiBills">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="exportPiaojuyiBillExcel" method="exportPiaojuyiBillExcel"
+			class="com.unbank.spider.billquery.action.PiaojuyiBillAction">
+			<result name="success" type="stream">
+				<param name="contentType">application/vnd.ms-excel;charset=utf-8</param>
+				<param name="inputName">inputStream</param>
+				<param name="bufferSize">4096</param>
+				<param name="contentDisposition">attachment;fileName="${fileName}"</param>
+			</result>
+		</action>
+
+	</package>
+</struts>    

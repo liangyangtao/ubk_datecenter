@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.devMode" value="true" />
+	<package name="courtquery" namespace="/" extends="default">
+
+		<action name="readCourtInfos"
+			class="com.unbank.spider.courtquery.action.CourtQueryAction" method="readCourtInfos">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="exportCourtexcel" method="exportCourtexcel"
+			class="com.unbank.spider.courtquery.action.CourtQueryAction">
+			<result name="success" type="stream">
+				<param name="contentType">application/vnd.ms-excel;charset=utf-8</param>
+				<param name="inputName">inputStream</param>
+				<param name="bufferSize">4096</param>
+				<param name="contentDisposition">attachment;fileName="${fileName}"</param>
+			</result>
+		</action>
+
+	</package>
+</struts>    
